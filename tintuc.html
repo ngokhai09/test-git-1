@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tin tức - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/tintuc.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="body-tintuc">
+            <div class="tintuc-info">
+                <a href="https://vnexpress.net/cai-tien-moi-tren-camera-cua-iphone-16-pro-4734723.html" target="_blank">
+                    <img src="img/tintuc/tintuc1.png">
+                    <h2>Cải tiến mới trên camera của iPhone 16 Pro</h2>
+                </a>
+                <br/>
+                <h5>Doanh ngiệp &emsp;3 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://www.thegioididong.com/tin-tuc/danh-gia-hieu-nang-iphone-15-1558189" target="_blank">
+                    <img src="img/tintuc/tintuc2.png">
+                    <h2>iPhone 15 cấu hình mạnh mẽ với vi xử lý Apple A16 Bionic</h2>
+                </a>
+                <br/>
+                <h5>Thanh niên &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="https://cellphones.com.vn/sforum/galaxy-s24-ultra-co-uu-nhuoc-diem-gi" target="_blank">
+                    <img src="img/tintuc/tintuc3.png">
+                    <h2>Galaxy S24 Ultra có ưu, nhược điểm gì? Có đáng để người dùng “xuống tiền”?</h2>
+                </a>
+                <br/>
+                <h5>VOV &emsp; 6 giờ</h5>
+            </div>
+            <div class="tintuc-info">
+                <a href="http://vietq.vn/chiec-dien-thoai-thong-minh-nay-cua-lg-se-co-toi-16-camera-d151674.html" target="_blank">
+                    <img src="img/tintuc/tintuc4.png">
+                    <h2>Chiếc điện thoại thông minh này của readmi sẽ có tới 16 Camera</h2>
+                </a>
+                <br/>
+                <h5>VietQ &emsp; 13 giờ</h5>
+            </div>
+            <div class="tintuc-info" style="border-bottom: 0;">
+                <a href="https://news.zing.vn/nhung-tieu-chi-ban-khong-nen-bo-qua-khi-mua-smartphone-2018-post894509.html" target="_blank">
+                    <img src="img/tintuc/tintuc5.png" height="148px" width="224px;">
+                    <h2>Những tiêu chí bạn không nên bỏ qua khi mua smartphone</h2>
+                </a>
+                <br/>
+                <h5>Zing &emsp; 9 giờ</h5>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giới thiệu - Thế giới điện thoại</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
+    <!-- Load font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+        
+    <!-- our files -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/taikhoan.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/gioithieu.css">
+
+    <!-- js -->
+    <script src="data/products.js"></script>
+	<script src="js/dungchung.js"></script>
+    <script>
+        window.onload = function () {
+            khoiTao();
+            // thêm tags (từ khóa) vào khung tìm kiếm
+            var tags = ["Samsung", "iPhone", "Huawei", "Oppo", "Mobi"];
+            for (var t of tags) addTags(t, "index.html?search=" + t);
+        }
+    </script>
+
+</head>
+
+<body>
+    <script> addTopNav();</script>
+
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Từ năm 1996, chúng tôi đã bắt đầu hành trình của mình tại thị trường điện thoại di động Hà Nội với sứ mệnh mang lại những sản phẩm chất lượng và dịch vụ tốt nhất cho khách hàng. Với niềm đam mê và sự cam kết, chúng tôi nhanh chóng trở thành một trong những địa chỉ hàng đầu trong lĩnh vực này.
+                </p>
+                <br />
+                <p>
+                    Kể từ năm 2000, chúng tôi đã đạt được một bước quan trọng khi trở thành đại lý duy nhất của Samsung, một trong những thương hiệu hàng đầu trong ngành công nghiệp điện tử và di động. Điều này đã củng cố vị thế của chúng tôi không chỉ là một nhà phân phối mà còn là một đối tác chiến lược của Samsung tại Việt Nam. Địa chỉ mới của chúng tôi tại 144 Xuân Thủy, Đại học Quốc gia Hà Nội là minh chứng cho sự phát triển và mở rộng của chúng tôi trong thời gian qua.<br />
+                    Với hơn 10 năm kinh nghiệm, chúng tôi tự hào về danh tiếng và uy tín mà mình đã xây dựng được trong cộng đồng khách hàng. Sứ mệnh của chúng tôi không chỉ là bán hàng mà còn là tạo ra những trải nghiệm tuyệt vời cho khách hàng. Đội ngũ nhân viên của chúng tôi không ngừng nỗ lực để đem lại sự hài lòng và thỏa mãn tối đa cho mỗi khách hàng, thông qua sự tận tâm, kiến thức sâu rộng về sản phẩm và dịch vụ chuyên nghiệp.<br />
+                    Mục tiêu của chúng tôi không chỉ dừng lại ở việc cung cấp các sản phẩm chính hãng với chất lượng đảm bảo mà còn là xây dựng một mối quan hệ lâu dài, bền vững với khách hàng. Chúng tôi cam kết tiếp tục nỗ lực không ngừng để mang lại giá trị tốt nhất cho khách hàng và cộng đồng.<br />
+                    Chúng tôi mong muốn sự đóng góp của khách hàng sẽ giúp chúng tôi ngày một phát triển để từ đó củng
+                    cố thêm lòng tin của khách hàng với chúng tôi. Chúng tôi rất biết ơn sự tin tưởng của khách hàng
+                    trong suốt gần 10 năm qua và chúng tôi luôn tâm niệm rằng cần phải cố gắng hơn nữa để xứng đáng với
+                    phương châm đề ra “Nếu những gì chúng tôi không có, nghĩa là bạn không cần .<br />
+                    Chúng tôi xin chân thành cảm ơn tất cả các khách hàng đã, đang và sẽ ủng hộ chúng tôi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script> addContainTaiKhoan(); </script>
+
+    <div class="footer">
+        <script>addFooter();</script>
+        
+    </div>
+
+    <i class="fa fa-arrow-up" id="goto-top-page" onclick="gotoTop()"></i>
+</body>
+
+</html>
